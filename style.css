@@ -1,0 +1,178 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #bcb9b9;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+body input {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 230px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 5px;
+    outline: none;
+    box-shadow: 5px 5px 10px #a11515;
+}
+
+body h1 {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 10px black;
+    color: white;
+    padding: 6px;
+    background-color: #dd1717;
+}
+
+body div.search {
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    top: 0px;
+}
+
+body div.gallery {
+    max-width: 1000px;
+    margin: 40px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+body div.gallery div {
+    width: 160px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 20px;
+    box-shadow: 5px 5px 6px, -5px 5px 6px black;
+    border: 2px solid black;
+    padding: 5px;
+    background-color: wheat;
+    position: relative;
+    cursor: pointer;
+}
+
+body div.gallery div:hover {
+    border: 2px solid gray;
+    box-shadow: 5px 5px 6px grey, -5px 5px 6px grey;
+}
+
+body div.gallery div img {
+    display: block;
+    width: 100px;
+    height: 150px;
+    border-radius: 10px;
+    background-color: red;
+    margin: 5px auto; 
+}
+
+body div.gallery div h5 {
+    text-align: center;
+    margin: 10px;
+    text-shadow: 1px 1px 3px grey;
+}
+
+body div.gallery div span {
+    width: 70px;
+    height: 25px;
+    border-radius: 6px;
+    background-color: red;
+    display: block;
+    margin: 0;
+    padding: 2px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    border: 1px solid saddlebrown;
+    text-shadow: 1px 1px 2px black;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+body div.gallery div span:hover {
+    width: 75px;
+    height: 28px;
+    transition: all 0.5s;
+}
+
+button {
+    position: absolute;
+    right: 295px;
+    top: 16px;
+    height: 30px;
+    width: 75px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    background-color: #5353ce;
+    border: 1.5px solid;
+    box-shadow: 5px 5px 10px #a11515;
+}
+
+button:hover {
+    color: #5353ce;
+    background-color: white;
+    box-shadow: -5px -5px 10px #a11515;
+}
+
+@media screen and (max-width: 1100px) {
+    body div.search {
+        width: 400px;
+        top: 50px;
+        right: 0;
+    }
+
+    body h1 {
+        height: 105px;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+
+    body h1 {
+        font-size: 30px;
+    }
+
+    body div.gallery div {
+        width: 90px;
+        height: 137px;
+        margin: 10px;
+    }
+
+    body div.gallery div img {
+        width: 75px;
+        height: 92px;
+    }
+
+    body div.gallery div span {
+        width: 43px;
+        height: 20px;
+        font-size: 11px;
+    }
+
+    body div.gallery div h5 {
+       font-size: 7px;
+    }
+
+    body div.search button{
+        right: 222px;
+    }
+
+    body div.search input{
+        right: 18px;
+        width: 197px;
+    }
+
+}
